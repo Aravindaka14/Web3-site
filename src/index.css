@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.urbanist-font {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* .text-gradient {
+    background: linear-gradient(to right, #f00, #0f0, #00f); /* Customize your gradient colors */
+   /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */

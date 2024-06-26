@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: 000000;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  font-family: "Manrope", sans-serif;
+  color: #2ED3B7;
+  border: 2px solid #2ED3B7;
+  border-bottom: 8px solid;
+  background-color: #17181A;
+}
+
+.button2 {
+  font-family: "Manrope", sans-serif;
+  color: #2ED3B7;
+}
+
+.heropagecustom {
+  background:linear-gradient(to right, #67FFD1, #5BCEE8, #4F9DFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heropagecustom2{
+  font-family: "Manrope", sans-serif; 
+  color: #FFFFFF;
+}
+
+.section{
+  background-color: #17181A;
+  background-image: url('src/assets/Icon2.png');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position:right;
+  /* box-shadow: #777879; */
+}
+
+.fourboxes{
+  background-color: #17181A;
+  color: #777879;
+  opacity: 90%;
+}
+
+.fourboxes2{
+  color: #FFFFFF;
+  background-color: #111213; 
+}
