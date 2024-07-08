@@ -18,7 +18,9 @@ export default {
         secondMainCardLight: "#17181A",
         sourceCode: "#D2D2D2",
         ellipseColor: "#0071FF",
-        hoverColorChange: "#99F6E0"
+        hoverColorChange: "#99F6E0",
+        navBarColor:"#1D1E20",
+        fontGray:"#777879",
       },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
@@ -40,6 +42,7 @@ export default {
       },
       boxShadow: {
         customlight: '0 3px 3px 0 rgba(46, 211, 183, 1)',
+        insetcustomlight:'inset 0 -12px 9px 5px rgba(46, 211, 183, 1)',
         customdark: '0 3px 3px rgba(14, 147, 132, 1)',
         glow: '0 12px 15px -10px rgba(14, 147, 132, 1)',
       },
@@ -53,16 +56,22 @@ export default {
       },
       height: {
         h452: "452px",
+        h11:"11.55%",
         h23: "23%",
         h40: "40%",
-        h78:"78%"
+        h56:"56.88%",
+        h78:"78%",
+        h50:"50%"
       },
       width: {
+        w6:"6.11%",
         w408: "408px",
-        "w50%": "50%",
-        "w63%": "63.1%",
-        w60: "60.5%",
         w25: "25.8%",
+        w37:"37.22%",
+        w50: "50%",
+        w60: "60.5%",
+        w63: "63.1%",
+        w94:"93.89%"
       },
       lineHeight: {
         "3p5": "3.5rem"

@@ -1,6 +1,5 @@
-// import "./index.css";
-import "./home.css";
 import { useNavigate } from "react-router-dom";
+import "./home.css";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,12 +10,12 @@ const Home = () => {
     )
   }
   return (
-    <div className="bg-black w-full">
+    <div className="bg-black max-w-full">
 
-      <header className="flex h-20 justify-between items-center stickyheader">
+      <header className="flex w-full h-20 justify-between items-center stickyheader">
         <div className="flex h-9 items-center ml-8">
-          <img src="src\assets\Group 6.png" alt="logo" className="h-9 w-7 " />
-          <img src="src\assets\Kanalabs.png" alt="logoName" className="text-white h-8 w-32 pl-2 pt-1" />
+          <img src="src\assets\logo.png" alt="logo" className="h-9 w-auto " />
+          <img src="src\assets\Kanalabs.png" alt="logoName" className="text-white h-8 w-auto pl-2 pt-1" />
         </div>
         <div className="mr-8">
           <img src="src\assets\Path.png" alt="features" className="bg-white w-5 h-0.5 m-1" />
@@ -28,7 +27,7 @@ const Home = () => {
         <div className="flex pb-4">
           <div className="w-1/4 flex justify-center items-start">
             <img className="opacity-60 w-62 drop-shadow-heroImageShadow" src="src\assets\Group 1261152703.png" alt="logowhole" />
-            
+
           </div>
           <div className="w-2/4 h-96">
             <div className=" heropageToplogo flex justify-center items-center">
@@ -85,7 +84,7 @@ const Home = () => {
           <div className=" flex gap-14 bg-secondMainCard border border-secondMainCard rounded-3xl min-h-screen w-full justify-center items-center ">
             <div className=" flex flex-col w-1/3 items-start">
               <h3 className=" font-manrope text-3xl text-wordings leading-10 font-light">Swap tokens natively using across <p className="inline font-bold text-white"> Solana, Aptos, Ethereum, zksync, Arbitrum, Sui, Optimism, Polygon and more!</p></h3>
-              <button className="button rounded-2xl py-3.5 px-6 font-extrabold my-6 opacity-70 hover:bg-secondMainCard hover:shadow-customdark hover:drop-shadow-sm" onClick={() => { handlePath("swap") }}>Swap now</button>
+              <button className="button rounded-2xl py-3.5 px-6 font-extrabold my-6 opacity-70 shadow-glow hover:bg-secondMainCard hover:shadow-customdark hover:drop-shadow-sm" onClick={() => { handlePath("swap") }}>Swap now</button>
             </div>
             <div className="w-1/3">
               <img className="mx-9 w-w408 h-h452" src="src\assets\image - 1.png" alt="Crosschain swap image" />
@@ -101,17 +100,17 @@ const Home = () => {
           <div className="flex  w-full h-auto gap-4">
             <div className="flex flex-col justify-center items-start w-1/2 h-auto bg-custom-gradient border rounded-3xl border-black px-28 py-8 mx-2 ">
               <h3 className=" font-manrope text-3xl text-white leading-10 font-light  ">Spot Trading. Buy and Sell with limit and market order-books. Built on Aptos.</h3>
-              <button className="buttonTradeNow rounded-2xl py-3.5 px-6 font-extrabold my-6 hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Trade now</button>
+              <button className="buttonTradeNow rounded-2xl py-3.5 px-6 font-extrabold my-6 shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Trade now</button>
             </div>
             <div className="relative w-1/2  bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-24 py-8">
               <img className="w-full h-auto mt-7" src="src\assets\image 103.svg" alt="tradingImage" />
               <img className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/6 h-4/6 mt-7" src="src\assets\image 106.svg" alt="tradingImage2" />
             </div>
           </div>
-          <div className="flex w-full bg-secondMainCard border border-secondMainCard rounded-3xl">
-            <div className="flex flex-col justify-center items-start w-1/2 h-h78  px-28 py-8 mx-2 gap-5 mt-44">
+          <div className="flex w-full justify-center items-center bg-secondMainCard border border-secondMainCard rounded-3xl">
+            <div className="flex flex-col justify-center items-start w-1/2 h-h78  px-28 py-8 mx-2 gap-5 ">
               <h3 className=" font-manrope text-3xl text-white font-light  ">Trade with leverage</h3>
-              <button className="buttonTradeNow rounded-2xl py-3.5 px-6 font-extrabold hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try Perps</button>
+              <button className="buttonTradeNow rounded-2xl py-3.5 px-6 font-extrabold shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try Perps</button>
             </div>
             <div className="relative w-1/2 bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-24 py-8">
               <img className="w-full h-auto mt-7" src="src\assets\image 103.svg" alt="tradingImage" />
@@ -125,10 +124,10 @@ const Home = () => {
             <h4 className="font-urbanist font-semibold text-4xl text-white">OPerps - Derivatives Token</h4>
             <button className="button  border rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >See whats new</button>
           </div>
-          <div className="flex w-full bg-secondMainCard border border-secondMainCard rounded-3xl">
-            <div className="flex flex-col justify-center items-start w-1/2 h-h78  px-28 py-8 mx-2 gap-5 mt-44">
+          <div className="flex w-full justify-center items-center bg-secondMainCard border border-secondMainCard rounded-3xl">
+            <div className="flex flex-col justify-center items-start w-1/2 h-h78  px-28 py-8 mx-2 gap-5 ">
               <h3 className=" font-manrope text-3xl text-white font-light  "> A derivates token for trading and hedging.</h3>
-              <button className="buttonTradeNow rounded-2xl py-3.5 px-6 font-extrabold hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try OPerps</button>
+              <button className="buttonTradeNow rounded-2xl py-3.5 px-6 font-extrabold shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try OPerps</button>
             </div>
             <div className="relative w-1/2 bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-24 py-8">
               <img className="w-full h-auto mt-7" src="src\assets\image 104.svg" alt="tradingImage" />
@@ -142,43 +141,49 @@ const Home = () => {
             <button className="button  border rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Explore Documentation</button>
           </div>
           <div className="flex  w-full h-full">
-            <div className="flex flex-col w-w50% bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-28 py-16 mx-2 my-4 gap-10">
-              <div className="mt-10">
-                <div className="text-white">
-                  <p className="font-semibold font-urbanist text-4xl">Mirai SDK</p>
-                  <p className="font-manrope text-sm font-light leading-9">integrate with other dApps</p>
+            <div className="flex flex-col w-w50 justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
+
+              <div className="flex flex-col justify-start">
+                <div className=" flex flex-col w-full justify-start items-start ">
+                  <div className="text-white">
+                    <p className="font-semibold font-urbanist text-4xl">Mirai SDK</p>
+                    <p className="font-manrope text-sm font-light leading-9">integrate with other dApps</p>
+                  </div>
+                  <button className="button  border rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-bold hover:text-hoverColorChange hover:border-hoverColorChange" >Read Documentation</button>
                 </div>
-                <button className="button  border rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-bold hover:text-hoverColorChange hover:border-hoverColorChange" >Read Documentation</button>
-              </div>
-              <div className="bg-secondMainCardLight h-auto w-96 border border-sourceCode border-opacity-10 rounded-2xl my-6">
-                <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
-                  <p className="font-sourceCodePro text-base  text-sourceCode tracking-widest leading-6 mx-4 my-4">npm install @kanalabs/ <br></br> paymaster-sdk</p>
-                  <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
-                </div>
-                <p className="font-sourceCodePro text-base text-sourceCode mx-4">or</p>
-                <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
-                  <p className="font-sourceCodePro text-base text-sourceCode tracking-widest leading-6 mx-4 my-4">yarn add @kanalabs/ <br></br> paymaster-sdk</p>
-                  <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
+                <div className="bg-secondMainCardLight h-auto border border-sourceCode border-opacity-10 rounded-2xl my-6">
+                  <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
+                    <p className="font-sourceCodePro text-base  text-sourceCode tracking-widest leading-6 mx-4 my-4">npm install @kanalabs/ <br></br> paymaster-sdk</p>
+                    <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
+                  </div>
+                  <p className="font-sourceCodePro text-base text-sourceCode mx-4">or</p>
+                  <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
+                    <p className="font-sourceCodePro text-base text-sourceCode tracking-widest leading-6 mx-4 my-4">yarn add @kanalabs/ <br></br> paymaster-sdk</p>
+                    <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col w-w50% bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-28 py-16 mx-2 my-4 gap-10">
-              <div className="mt-10">
-                <div className="text-white">
-                  <p className="font-semibold font-urbanist text-4xl">Cross-chain Swap</p>
-                  <p className="font-manrope text-sm font-light leading-9">integrate with other dApps</p>
+            <div className="flex flex-col w-w50 justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
+
+              <div className="flex flex-col justify-start">
+                <div className=" flex flex-col w-full justify-start items-start ">
+                  <div className="text-white">
+                    <p className="font-semibold font-urbanist text-4xl">Mirai SDK</p>
+                    <p className="font-manrope text-sm font-light leading-9">integrate with other dApps</p>
+                  </div>
+                  <button className="button  border rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-bold hover:text-hoverColorChange hover:border-hoverColorChange" >Read Documentation</button>
                 </div>
-                <button className="button  border rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-bold hover:text-hoverColorChange hover:border-hoverColorChange" >Read Documentation</button>
-              </div>
-              <div className="bg-secondMainCardLight h-auto w-96 border border-sourceCode border-opacity-10 rounded-2xl my-6">
-                <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
-                  <p className="font-sourceCodePro text-base  text-sourceCode tracking-widest leading-6 mx-4 my-4">npm install @kanalabs/ <br></br> paymaster-sdk</p>
-                  <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
-                </div>
-                <p className="font-sourceCodePro text-base text-sourceCode mx-4">or</p>
-                <div className="flex justify-between items-center bg-secondMainCard border gradient border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
-                  <p className="font-sourceCodePro text-base text-sourceCode tracking-widest leading-6 mx-4 my-4">yarn add @kanalabs/ <br></br> paymaster-sdk</p>
-                  <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
+                <div className="bg-secondMainCardLight h-auto border border-sourceCode border-opacity-10 rounded-2xl my-6">
+                  <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
+                    <p className="font-sourceCodePro text-base  text-sourceCode tracking-widest leading-6 mx-4 my-4">npm install @kanalabs/ <br></br> paymaster-sdk</p>
+                    <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
+                  </div>
+                  <p className="font-sourceCodePro text-base text-sourceCode mx-4">or</p>
+                  <div className="flex justify-between items-center bg-secondMainCard border border-sourceCode border-opacity-10 rounded-2xl mx-4 my-4">
+                    <p className="font-sourceCodePro text-base text-sourceCode tracking-widest leading-6 mx-4 my-4">yarn add @kanalabs/ <br></br> paymaster-sdk</p>
+                    <img className="w-5 h-5 mx-4 my-4" src="src\assets\copyIcon.png" alt="copy" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -186,12 +191,12 @@ const Home = () => {
         </section>
       </main>
       <div className="flex justify-end items-end m-10 ">
-      <img className="gradient-border w-12 h-11 p-4 mx-4" src="src\assets\Vector-goTop.png" alt="goToTop"/>
+        <img className="gradient-border w-12 h-11 p-4 mx-4" src="src\assets\Vector-goTop.png" alt="goToTop" />
       </div>
       <footer className=" flex bg-black h-96 mt-1 border-t border-footerborder border-opacity-30">
         <div className="w-1/2 h-80 items-start mx-12 mt-16" >
           <div className="flex items-center" >
-            <img src="src\assets\Group 6.png" alt="logo" className="h-9  w-7" />
+            <img src="src\assets\logo.png" alt="logo" className="h-9  w-7" />
             <img src="src\assets\Kanalabs.png" alt="logoName" className="text-white h-10 w-40 pl-2 pt-1" />
           </div>
           <p className="opacity-50 text-white text-xs my-4 mx-1 font-manrope">&copy; Copyright 2024 Kana Labs</p>
