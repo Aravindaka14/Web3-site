@@ -14,8 +14,8 @@ const Home = () => {
 
       <header className="flex w-full h-20 justify-between items-center stickyheader">
         <div className="flex h-9 items-center ml-8">
-          <img src="src\assets\logo.png" alt="logo" className="h-9 w-auto " />
-          <img src="src\assets\Kanalabs.png" alt="logoName" className="text-white h-8 w-auto pl-2 pt-1" />
+          <img src="src\assets\logo.png" alt="logo" className="xl:h-9 lg:h-7 w-auto " />
+          <img src="src\assets\Kanalabs.png" alt="logoName" className="text-white xl:h-8 lg:h-7 w-auto pl-2 pt-1" />
         </div>
         <div className="mr-8">
           <img src="src\assets\Path.png" alt="features" className="bg-white w-5 h-0.5 m-1" />
@@ -35,8 +35,8 @@ const Home = () => {
             <br></br>
             <p className="text-center text-white font-manrope text-lg font-normal tracking-wide">Where Chains & Experiences Unite</p>
             <div className="flex justify-center ">
-              <button className="bg-secondMainCardLight text-buttonborder border-2 border-solid border-buttonborder border-b-8 rounded-2xl xl:py-4 xl:px-6 lg:py-3 lg:px-3 font-manrope xl:font-extrabold lg:font-bold mr-10 my-6 hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customlight hover:transition-all" onClick={() => { handlePath("swap") }}>Launch App</button>
-              <button className=" font-manrope font-extrabold text-buttonborder leading-4 hover:text-hoverColorChange">Learn More</button>
+              <button className="bg-secondMainCardLight text-buttonborder border-2 border-solid border-buttonborder border-b-8 rounded-2xl xl:py-4 xl:px-6 lg:py-3 lg:px-3 font-manrope xl:text-base lg:text-sm xl:font-extrabold lg:font-bold mr-10 my-6 hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customlight hover:transition-all" onClick={() => { handlePath("swap") }}>Launch App</button>
+              <button className="font-manrope font-extrabold text-buttonborder xl:text-base lg:text-sm leading-4 hover:text-hoverColorChange">Learn More</button>
             </div>
           </div>
           <div className="w-1/4 flex justify-end items-start">
@@ -44,30 +44,30 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-36 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow ">
-            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl text-xl ">Lorem ipsum dolor sit amet</div>
-            <div className=" flex bg-secondMainCard text-white  font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-2 lg:px-2 rounded-b-2xl">
+          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-38 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow ">
+            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl xl:text-xl lg:text-lg ">Lorem ipsum dolor sit amet</div>
+            <div className=" flex bg-secondMainCard text-white  font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-3 lg:px-6 rounded-b-2xl">
               <p>Trade</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3 drop-shadow-customColor" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-36 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow">
-            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl text-xl">Try the new cross-chain swap</div>
-            <div className=" flex bg-secondMainCard text-white font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-2 lg:px-2 rounded-b-2xl">
+          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-38 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow">
+            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl xl:text-xl lg:text-lg">Try the new cross-chain swap</div>
+            <div className=" flex bg-secondMainCard text-white font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-3 lg:px-6 rounded-b-2xl">
               <p>Swaps</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-36 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow">
-            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl text-xl">Lorem ipsum dolor sit amet</div>
-            <div className=" flex bg-secondMainCard text-white  font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-2 lg:px-2 rounded-b-2xl">
+          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-38 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow">
+            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl xl:text-xl lg:text-lg">Lorem ipsum dolor sit amet</div>
+            <div className=" flex bg-secondMainCard text-white  font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-3 lg:px-6 rounded-b-2xl">
               <p>Perps</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-36 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow">
-            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl text-xl">Lorem ipsum dolor sit amet</div>
-            <div className=" flex bg-secondMainCard text-white  font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-2 lg:px-2 rounded-b-2xl">
+          <section className="xl:w-60 xl:h-40 lg:w-52 lg:h-38 rounded-2xl xl:m-3 lg:m-2 section border border-white border-opacity-10 hover:drop-shadow-sm hover:shadow-glow">
+            <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left rounded-t-2xl xl:text-xl lg:text-lg">Lorem ipsum dolor sit amet</div>
+            <div className=" flex bg-secondMainCard text-white  font-bold justify-between items-center xl:py-4 xl:px-4 lg:py-3 lg:px-6 rounded-b-2xl">
               <p>OPerps</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
@@ -77,13 +77,13 @@ const Home = () => {
       <main className="w-full">
         <section className="flex flex-col justify-center items-center mt-40 w-5/6 h-auto xl:mx-28 lg:mx-20">
           <div className="flex flex-col justify-center items-center h-52">
-            <h4 className="font-urbanist font-semibold text-4xl text-white">Cross-chain swap</h4>
-            <button className="border-2 border-buttonBorderDark rounded-lg px-4 py-2 mt-3 bg-secondMainCardLight font-manrope text-buttonborder text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Try swap</button>
+            <h4 className="font-urbanist font-semibold xl:text-4xl lg:text-3xl text-white">Cross-chain swap</h4>
+            <button className="border-2 border-buttonBorderDark rounded-lg px-4 py-2 mt-3 bg-secondMainCardLight font-manrope text-buttonborder xl:text-sm lg:text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Try swap</button>
           </div>
           <div className=" flex gap-14 bg-secondMainCard border border-secondMainCard rounded-3xl min-h-screen w-full justify-center items-center ">
             <div className=" flex flex-col w-1/3 items-start">
-              <h3 className=" font-manrope text-3xl text-wordings leading-10 font-light">Swap tokens natively using across <p className="inline font-bold text-white"> Solana, Aptos, Ethereum, zksync, Arbitrum, Sui, Optimism, Polygon and more!</p></h3>
-              <button className="bg-secondMainCardLight border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder rounded-2xl xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold my-6 opacity-70 shadow-glow hover:bg-secondMainCard hover:shadow-customdark hover:drop-shadow-sm" onClick={() => { handlePath("swap") }}>Swap now</button>
+              <h3 className=" font-manrope xl:text-3xl lg:text-2xl text-wordings leading-10 font-light">Swap tokens natively using across <p className="inline xl:font-bold lg:font-semibold text-white"> Solana, Aptos, Ethereum, zksync, Arbitrum, Sui, Optimism, Polygon and more!</p></h3>
+              <button className="bg-secondMainCardLight border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder rounded-2xl xl:text-base lg:text-xs xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold my-6 opacity-70 shadow-glow hover:bg-secondMainCard hover:shadow-customdark hover:drop-shadow-sm" onClick={() => { handlePath("swap") }}>Swap now</button>
             </div>
             <div className="w-1/3">
               <img className="mx-9 w-w408 h-h452" src="src\assets\image - 1.png" alt="Crosschain swap image" />
@@ -93,13 +93,13 @@ const Home = () => {
         <section className="flex flex-col justify-center items-center mt-40 w-5/6 h-auto xl:mx-28 lg:mx-20 gap-5">
           <div className="flex flex-col justify-center items-center h-52 gap-2">
             <p className="font-manrope font-bold text-sm text-footerborder">ECONIA</p>
-            <h4 className="font-urbanist font-semibold text-4xl text-white">Trade</h4>
-            <button className="bg-secondMainCardLight text-buttonborder  border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >See whats new</button>
+            <h4 className="font-urbanist font-semibold xl:text-4xl lg:text-3xl text-white">Trade</h4>
+            <button className="bg-secondMainCardLight text-buttonborder  border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope xl:text-sm lg:text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >See whats new</button>
           </div>
           <div className="flex  w-full h-auto gap-4">
             <div className="flex flex-col justify-center items-start w-1/2 h-auto bg-custom-gradient border rounded-3xl border-black px-28 py-8 mx-2 ">
-              <h3 className=" font-manrope text-3xl text-white leading-10 font-light  ">Spot Trading. Buy and Sell with limit and market order-books. Built on Aptos.</h3>
-              <button className=" border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder bg-secondMainCardLight rounded-2xl xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold my-6 shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Trade now</button>
+              <h3 className=" font-manrope xl:text-3xl lg:text-2xl text-white leading-10 font-light  ">Spot Trading. Buy and Sell with limit and market order-books. Built on Aptos.</h3>
+              <button className=" border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder bg-secondMainCardLight rounded-2xl xl:text-base lg:text-xs xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold my-6 shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Trade now</button>
             </div>
             <div className="relative w-1/2  bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-24 py-8">
               <img className="w-full h-auto mt-7" src="src\assets\image 103.svg" alt="tradingImage" />
@@ -108,8 +108,8 @@ const Home = () => {
           </div>
           <div className="flex w-full justify-center items-center bg-secondMainCard border border-secondMainCard rounded-3xl">
             <div className="flex flex-col justify-center items-start w-1/2 h-h78  px-28 py-8 mx-2 gap-5 ">
-              <h3 className=" font-manrope text-3xl text-white font-light  ">Trade with leverage</h3>
-              <button className=" border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder bg-secondMainCardLight rounded-2xl xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try Perps</button>
+              <h3 className=" font-manrope xl:text-3xl lg:text-2xl text-white font-light  ">Trade with leverage</h3>
+              <button className=" border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder bg-secondMainCardLight rounded-2xl xl:text-base lg:text-xs xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try Perps</button>
             </div>
             <div className="relative w-1/2 bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-24 py-8">
               <img className="w-full h-auto mt-7" src="src\assets\image 103.svg" alt="tradingImage" />
@@ -120,13 +120,13 @@ const Home = () => {
         <section className="flex flex-col justify-center items-center mt-40 w-5/6 h-auto xl:mx-28 lg:mx-20">
           <div className="flex flex-col justify-center items-center h-52 gap-2">
             <p className="font-manrope font-bold text-sm text-footerborder">ETHOSX</p>
-            <h4 className="font-urbanist font-semibold text-4xl text-white">OPerps - Derivatives Token</h4>
-            <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >See whats new</button>
+            <h4 className="font-urbanist font-semibold xl:text-4xl lg:text-3xl text-white">OPerps - Derivatives Token</h4>
+            <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope xl:text-sm lg:text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >See whats new</button>
           </div>
           <div className="flex w-full justify-center items-center bg-secondMainCard border border-secondMainCard rounded-3xl">
             <div className="flex flex-col justify-center items-start w-1/2 h-h78  px-28 py-8 mx-2 gap-5 ">
-              <h3 className=" font-manrope text-3xl text-white font-light  "> A derivates token for trading and hedging.</h3>
-              <button className=" border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder bg-secondMainCardLight rounded-2xl xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try OPerps</button>
+              <h3 className=" font-manrope xl:text-3xl lg:text-2xl text-white font-light  "> A derivates token for trading and hedging.</h3>
+              <button className=" border-2 border-b-8 border-buttonBorderDark font-manrope text-buttonborder bg-secondMainCardLight rounded-2xl xl:text-base lg:text-xs xl:py-3.5 xl:px-6 lg:py-3 lg:px-3 xl:font-extrabold lg:font-bold shadow-glow hover:bg-secondMainCard hover:drop-shadow-sm hover:shadow-customdark hover:transition-all" onClick={() => { handlePath("swap") }}>Try OPerps</button>
             </div>
             <div className="relative w-1/2 bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl px-24 py-8">
               <img className="w-full h-auto mt-7" src="src\assets\image 104.svg" alt="tradingImage" />
@@ -136,15 +136,15 @@ const Home = () => {
         </section>
         <section className="flex flex-col justify-center items-center mt-40 w-5/6 min-h-full h-auto xl:mx-28 lg:mx-20">
           <div className="flex flex-col justify-center items-center h-52">
-            <h4 className="font-urbanist font-semibold text-4xl text-white">For Developers</h4>
-            <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Explore Documentation</button>
+            <h4 className="font-urbanist font-semibold xl:text-4xl lg:text-3xl text-white">For Developers</h4>
+            <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope xl:text-sm lg:text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Explore Documentation</button>
           </div>
           <div className="flex justify-between gap-4 w-full min-h-full h-auto">
             <div className="flex flex-col w-w50 justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
               <div className="flex flex-col justify-start gap-14">
                 <div className=" flex flex-col w-full justify-start items-start ">
                   <div className="text-white">
-                    <p className="font-semibold font-urbanist text-4xl">Mirai SDK</p>
+                    <p className="font-semibold font-urbanist xl:text-4xl lg:text-3xl">Mirai SDK</p>
                     <p className="font-manrope text-sm font-light leading-9">integrate with other dApps</p>
                   </div>
                   <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-bold hover:text-hoverColorChange hover:border-hoverColorChange" >Read Documentation</button>
@@ -166,7 +166,7 @@ const Home = () => {
               <div className="flex flex-col justify-start p-8 gap-14">
                 <div className=" flex flex-col w-full justify-start items-start ">
                   <div className="text-white">
-                    <p className="font-semibold font-urbanist text-4xl">Cross-chain Swap</p>
+                    <p className="font-semibold font-urbanist xl:text-4xl lg:text-3xl">Cross-chain Swap</p>
                     <p className="font-manrope text-sm font-light leading-9">integrate with other dApps</p>
                   </div>
                   <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-lg px-4 py-2 mt-3 font-manrope text-xs font-bold hover:text-hoverColorChange hover:border-hoverColorChange" >Read Documentation</button>
