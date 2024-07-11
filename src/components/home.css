@@ -8,41 +8,12 @@
   height: 20vh;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
- }
-
-#logo {
-  display: flex;
-  flex-direction: column;
 }
 
-.button {
-  font-family: "Manrope", sans-serif;
-  color: #2ED3B7;
-  border: 2px solid #2ED3B7;
-  border-bottom: 8px solid;
-  background-color: #17181A;
-}
-
-.button2 {
-  font-family: "Manrope", sans-serif;
-  color: #2ED3B7;
-}
-.buttonTradeNow{
-  color:#0E9384;
-  font-family: "Manrope", sans-serif;
-  border: 2px solid #0E9384;
-  border-bottom: 8px solid;
-  background-color: #17181A;
-}
 .heropagecustom {
   background: linear-gradient(to right, #67FFD1, #5BCEE8, #4F9DFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.heropagecustom2 {
-  font-family: "Manrope", sans-serif;
-  color: #FFFFFF;
 }
 
 .heropageToplogo {
@@ -59,9 +30,7 @@
   background-repeat: no-repeat;
   background-position: right;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
-    /* Outer white glow */
     0 0 30px rgba(255, 255, 255, 0.6),
-    /* Inner white glow */
     0 0 40px rgba(255, 0, 0, 0.4);
 }
 
@@ -74,17 +43,6 @@
 }
 .section:hover{
   box-shadow: '0 12px 15px -10px rgba(14, 147, 132, 1)';
-}
-
-.fourboxes {
-  background-color: #17181A;
-  color: #777879;
-  opacity: 90%;
-}
-
-.fourboxes2 {
-  color: #FFFFFF;
-  background-color: #111213;
 }
 
 .gradient-border {

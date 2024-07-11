@@ -11,6 +11,7 @@ export default {
         logoName: "#FFFFFF",
         black: "#000000",
         buttonborder: "#2ED3B7",
+        buttonBorderDark:"#0E9384",
         cardborder: "#D2D2D2",
         footerborder: "#7D8595",
         secondMainCard: "#111213",
@@ -21,6 +22,9 @@ export default {
         hoverColorChange: "#99F6E0",
         navBarColor:"#1D1E20",
         fontGray:"#777879",
+        purple:"#8247E5",
+        orangeRed:"#D64F4A",
+        skyBlue:"#6FBCF0",
       },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
@@ -56,7 +60,7 @@ export default {
       },
       height: {
         h452: "452px",
-        h11:"11.55%",
+        h11:"11.55vh",
         h23: "23%",
         h40: "40%",
         h56:"56.88%",
@@ -64,9 +68,10 @@ export default {
         h50:"50%"
       },
       width: {
-        w6:"6.11%",
+        w6:"6.11vw",
         w408: "408px",
         w25: "25.8%",
+        w28:"28.33%",
         w37:"37.22%",
         w50: "50%",
         w60: "60.5%",
@@ -75,7 +80,16 @@ export default {
       },
       lineHeight: {
         "3p5": "3.5rem"
-      }
+      },
+      backdropBlur: {
+        xs: '2px',
+        sm: '4px',
+        md: '8px',
+        lg: '12px',
+        xl: '16px',
+        '2xl': '24px',
+        '3xl': '40px',
+      },
     },
   },
   plugins: [],
