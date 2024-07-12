@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '350px', 
+      },
       colors: {
         path: "#D9D9D9",
         logoName: "#FFFFFF",
