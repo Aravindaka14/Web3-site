@@ -140,7 +140,7 @@ const Home = () => {
             <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-md px-4 py-2 mt-3 font-manrope xl:text-sm md:text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Explore Documentation</button>
           </div>
           <div className="flex xs:flex-col md:flex-row md:justify-between xs:justify-center xs:items-center gap-4 w-full min-h-full h-auto">
-            <div className="flex flex-col w-w50 justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
+            <div className="flex flex-col md:w-w50 xs:w-full justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
               <div className="flex flex-col justify-start p-8 gap-14">
                 <div className=" flex flex-col w-full justify-start items-start ">
                   <div className="text-white">
@@ -162,7 +162,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col w-w50 justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
+            <div className="flex flex-col md:w-w50 xs:w-full justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
               <div className="flex flex-col justify-start p-8 gap-14">
                 <div className=" flex flex-col w-full justify-start items-start ">
                   <div className="text-white">
@@ -212,7 +212,7 @@ const Home = () => {
               <p className="text-white text-base h-7 my-3 ">SDKs</p>
               <p className="text-white text-base h-7 my-3">Launch App</p>
             </div>
-            <div className="mr-12">
+            <div className="md:mr-12">
               <p className="text-white opacity-50 text-sm font-light">FOLLOW US</p>
               <div className="flex my-4">
                 <img src="assets\Telegram.png" alt="telegram" className="mr-5 h-4 w-4" />
