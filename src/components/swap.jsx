@@ -3,7 +3,7 @@ const Swap = () => {
 
     return (
         <main className="flex flex-row w-full max-w-full h-auto bg-black">
-            <nav className="flex flex-col justify-between items-center w-w6 h-auto min-h-full bg-secondMainCardLight">
+            <nav className="md:flex xs:hidden flex-col justify-between items-center w-w6 h-auto min-h-full bg-secondMainCardLight">
                 <div className="flex flex-col justify-center items-center gap-10">
                     <div className="my-5">
                         <img className="w-6 h-8" src="assets\logo.png" alt="logo" />
@@ -33,8 +33,22 @@ const Swap = () => {
                     <img className="w-4 h-5" src="assets\Icon-help.svg" alt="helpIcon" />
                 </div>
             </nav>
-            <section className="w-w94 h-auto ">
-                <nav className="flex flex-row justify-around items-center h-h11 mx-4  bg-secondMainCard rounded-b-2xl">
+            <section className="md:w-w94 xs:w-full h-auto ">
+                <nav className="xs:flex xs:w-full md:hidden justify-between bg-secondMainCard px-4 py-2">
+                    <div className="xs:flex gap-3 justify-center items-center">
+                        <img src="assets\logo.png" alt="logo" />
+                        <p className="text-sm font-bold font-manrope text-white opacity-80">Swap</p>
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <div className="mr-4">
+                            <img src="assets\Path.png" alt="features" className="bg-white xl:w-5 md:w-4 xs:w-3 h-0.5 m-1 xs:m-0.5" />
+                            <img src="assets\math.mng" alt="features" className="bg-white xl:w-5 md:w-4 xs:w-3 h-0.5 m-1 xs:m-0.5" />
+                            <img src="assets\math.mng" alt="features" className="bg-white xl:w-5 md:w-4 xs:w-3 h-0.5 m-1 xs:m-0.5" />
+                        </div>
+                        <img className="text-white lg:w-4 lg:h-4 xl:w-6 xl:h-6 " src="assets\Icon-settings.svg" alt="settings" />
+                    </div>
+                </nav>
+                <nav className="md:flex xs:hidden flex-row justify-around items-center h-h11 mx-4  bg-secondMainCard rounded-b-2xl">
                     <div className="w-1/5 px-6 xl:py-3 md:py-2 flex flex-row justify-between items-center bg-navBarColor border border-navBarColor rounded-xl">
                         <p className="text-wordings font-manrope font-bold xl:text-sm md:text-xs">Your Balance</p>
                         <b className="text-white font-manrope opacity-80 xl:text-sm md:text-xs">1,234.00 USD</b>
@@ -62,36 +76,36 @@ const Swap = () => {
                         <img className="lg:w-4 lg:h-4 xl:w-6 xl:h-6 " src="assets\Icon-settings.svg" alt="settings" />
                     </div>
                 </nav>
-                <section className="flex flex-col justify-center items-center gap-4 py-4">
-                    <div className="w-w37 flex flex-col gap-4">
+                <section className="flex flex-col justify-center items-center gap-4 md:py-4">
+                    <div className="md:w-w37 xs:w-full flex flex-col gap-4">
 
-                        <aritcle className="py-3">
-                            <div className="flex justify-between">
-                                <div className="flex ">
-                                    <div className="flex gap-x-2 px-6 py-5 bg-secondMainCardLight border border-b-0 border-white border-opacity-10 rounded-t-2xl">
+                        <aritcle className="md:py-3">
+                            <div className="flex justify-between xs:w-full">
+                                <div className="flex xs:w-full ">
+                                    <div className="flex gap-x-2 px-6 py-5 bg-secondMainCardLight border border-b-0 border-white border-opacity-10 md:rounded-t-2xl">
                                         <img className="w-4 h-4" src="assets\Group-sameChain.svg" alt="same-chain" />
                                         <p className="font-manrope text-xs font-bold text-white opacity-80">Same-chain</p>
                                     </div>
-                                    <div className="flex gap-x-2 px-6 py-5 bg-secondMainCard border border-white border-opacity-10 rounded-t-2xl">
+                                    <div className="flex gap-x-2 px-6 py-5 bg-secondMainCard border border-white border-opacity-10 md:rounded-t-2xl">
                                         <img className="w-4 h-4" src="assets\Group-crossChain.svg" alt="cross-chain" />
                                         <p className="font-manrope text-xs font-bold text-wordings">Cross-chain</p>
                                     </div>
                                 </div>
-                                <div className="flex justify-center mx-3">
+                                <div className="xs:hidden md:flex justify-center mx-3">
                                     <img src="assets\Icon-greenColorgrid.svg" alt="grid" />
                                 </div>
                             </div>
-                            <div className="flex flex-col justify-start h-h56 bg-secondMainCardLight border border-white border-opacity-10 rounded-tl-none rounded-2xl p-6 gap-4">
+                            <div className="flex flex-col justify-start h-h56 bg-secondMainCardLight border border-white border-opacity-10 md:rounded-tl-none md:rounded-2xl p-6 gap-4">
                                 <div className="flex w-full justify-around">
                                     <p className="w-5/6 font-manrope text-sm font-bold text-white opacity-80 ">Same-chain Swap</p>
                                     <img src="assets\Icon-refresh.svg" alt="refreshIcon" />
                                     <img src="assets\Icon-settingsConsole.svg" alt="settings" />
                                 </div>
-                                <div className="w-full flex justify-start items-center xl:gap-4 lg:gap-3">
-                                    <div className="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-lg p-2">
+                                <div className="w-full flex justify-start items-center xl:gap-4 xs:gap-6 lg:gap-3 ">
+                                    <div className="xs:hidden md:inline-block bg-white bg-opacity-5 border border-white border-opacity-10 rounded-lg p-2">
                                         <img className=" bg-white rounded-full" src="assets\Group - 1.svg" alt="vector1" />
                                     </div>
-                                    <div className="w-10 h-10 flex justify-center items-center">
+                                    <div className="xs:hidden md:inline-block w-10 h-10 flex justify-center items-center">
                                         <div className="bg-black rounded-full flex justify-center items-center lg:w-6 lg:h-6 xl:w-8 xl:h-8">
                                             <img className="" src="assets\Group -2.svg" alt="vector2" />
                                         </div>
@@ -114,7 +128,7 @@ const Swap = () => {
                                     <div className="bg-black rounded-full">
                                         <img className="p-2 " src="assets\Vector-8.svg" alt="vector8" />
                                     </div>
-                                    <div className="">
+                                    <div className="xs:hidden md:inline-block">
                                         <div className="bg-skyBlue rounded-full flex justify-center items-center xl:w-8 xl:h-8 lg:w-6 lg:h-6">
                                             <img className="p-2 " src="assets\path-9.svg" alt="vector9" />
                                         </div>
@@ -185,20 +199,34 @@ const Swap = () => {
                         </aritcle>
 
 
-                        <aritcle className="flex flex-row justify-between items-center bg-secondMainCardLight border border-white border-opacity-10 rounded-2xl p-6 ">
+                        <aritcle className="flex flex-row justify-between items-center bg-secondMainCardLight border border-white border-opacity-10 md:rounded-2xl p-6 ">
                             <p className="mx-3 font-manrope text-fontGray text-sm font-normal">Additional details</p>
                             <div className="flex">
                                 <p className="font-manrope text-wordings text-sm font-normal">0.00 USD</p>
                                 <img className="mx-3" src="assets\VectorDownLooking2.svg" alt="vectorDownLooking" />
                             </div>
                         </aritcle>
-                        <aritcle className="flex flex-row justify-between items-center bg-secondMainCardLight border border-white border-opacity-10 rounded-2xl p-6 ">
+                        <aritcle className="flex flex-row justify-between items-center bg-secondMainCardLight border border-white border-opacity-10 md:rounded-2xl p-6 ">
                             <p className="mx-3 font-manrope text-fontGray text-sm font-normal">More routes</p>
                             <div className="flex">
                                 <p className="font-manrope text-wordings text-sm font-normal">0.00 USD</p>
                                 <img className="mx-3.5" src="assets\VectorSideLooking.svg" alt="vectorSideLooking" />
                             </div>
 
+                        </aritcle>
+                        <aritcle className="xs:flex md:hidden justify-around items-center bg-secondMainCardLight border border-white border-opacity-10">
+                            <div className="py-4 flex flex-col items-center">
+                                <img className="w-6 my-1" src="assets\Icon-coinsSwap.svg" alt="Home" />
+                                <p className="font-manrope font-normal text-xs text-wordings">Home</p>
+                            </div>
+                            <div className="py-4 flex flex-col items-center">
+                                <img className="w-6 my-1" src="assets\Icon-coinStacked.svg" alt="Balance" />
+                                <p className="font-manrope font-normal text-xs text-wordings">Balance</p>
+                            </div>
+                            <div className="py-4 flex flex-col items-center">
+                                <img className="w-6 my-1" src="assets\Icon-profile.svg" alt="Profile" />
+                                <p className="font-manrope font-normal text-xs text-wordings">Profile</p>
+                            </div>
                         </aritcle>
                     </div>
                 </section>
