@@ -44,28 +44,28 @@ const Home = () => {
           <button className="font-manrope font-extrabold text-buttonborder xl:text-base md:text-sm leading-4 xs:my-6 hover:text-hoverColorChange">Learn More</button>
         </div>
         <div className="flex  xs:flex-col md:flex-row  justify-center xs:justify-center mt-4 xs:mt-6">
-          <section className=" xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  border border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow ">
+          <section className=" xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm  hover:shadow-glow ">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Lorem ipsum dolor sit amet</div>
             <div className=" flex bg-secondMainCard text-white  xs:rounded-xl md:rounded-none font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>Trade</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3 drop-shadow-customColor" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  border border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
+          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Try the new cross-chain swap</div>
             <div className=" flex bg-secondMainCard text-white xs:rounded-xl md:rounded-none font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>Swaps</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  border border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
+          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Lorem ipsum dolor sit amet</div>
             <div className=" flex bg-secondMainCard text-white xs:rounded-xl md:rounded-none  font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>Perps</p>
               <img src="src\assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  border border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
+          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Lorem ipsum dolor sit amet</div>
             <div className=" flex bg-secondMainCard text-white xs:rounded-xl md:rounded-none  font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>OPerps</p>
@@ -139,9 +139,9 @@ const Home = () => {
             <h4 className="font-urbanist font-semibold xl:text-4xl md:text-3xl text-white">For Developers</h4>
             <button className="bg-secondMainCardLight text-buttonborder border border-buttonborder rounded-md px-4 py-2 mt-3 font-manrope xl:text-sm md:text-xs font-extrabold hover:text-hoverColorChange hover:border-hoverColorChange" >Explore Documentation</button>
           </div>
-          <div className="flex xs:flex-col md:flex-row justify-between gap-4 w-full min-h-full h-auto">
+          <div className="flex xs:flex-col md:flex-row md:justify-between xs:justify-center xs:items-center gap-4 w-full min-h-full h-auto">
             <div className="flex flex-col w-w50 justify-center items-center bg-secondMainCard border border-secondMainCard border-opacity-10  rounded-3xl gap-10">
-              <div className="flex flex-col justify-start gap-14">
+              <div className="flex flex-col justify-start p-8 gap-14">
                 <div className=" flex flex-col w-full justify-start items-start ">
                   <div className="text-white">
                     <p className="font-semibold font-urbanist xl:text-4xl md:text-3xl">Mirai SDK</p>
@@ -190,16 +190,16 @@ const Home = () => {
       <div className="flex justify-end items-end m-10 ">
         <img className="gradient-border w-12 h-11 p-4 mx-4" src="src\assets\Vector-goTop.png" alt="goToTop" />
       </div>
-      <footer className=" flex xs:flex-col md:flex-row bg-black min-h-96 mt-1 border-t border-footerborder border-opacity-30">
-        <div className="w-1/2 h-80 items-start mx-12 mt-16" >
+      <footer className=" flex xs:flex-col md:flex-row xs:justify-center bg-black min-h-96 mt-1 border-t border-footerborder border-opacity-30">
+        <div className="md:w-1/2 md:h-80 xs:w-full md:items-start xs:items-center md:mx-12 mt-16" >
           <div className="flex items-center" >
             <img src="src\assets\logo.png" alt="logo" className="h-9  w-7" />
             <img src="src\assets\Kanalabs.png" alt="logoName" className="text-white h-10 w-40 pl-2 pt-1" />
           </div>
           <p className="opacity-50 text-white text-xs my-4 mx-1 font-manrope">&copy; Copyright 2024 Kana Labs</p>
         </div>
-        <div className=" w-1/2 min-h-80 mt-16 font-manrope">
-          <div className="flex justify-between pt h-64">
+        <div className=" md:w-1/2 xs:w-full min-h-80 mt-16 font-manrope">
+          <div className="flex md:justify-between xs:justify-around pt h-64">
             <div className="">
               <p className="text-white opacity-50 text-sm font-light">COMPANY</p>
               <p className="text-white text-base h-7 my-3 ">Who we are</p>
