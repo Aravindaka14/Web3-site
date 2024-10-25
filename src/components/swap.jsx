@@ -194,7 +194,7 @@ const Swap = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="w-full font-manrope text-buttonborder text-opacity-100 bg-secondMainCardLight border border-b-8 border-buttonborder rounded-2xl py-3.5 px-6 font-extrabold  opacity-70 shadow-glow hover:bg-secondMainCard hover:shadow-customdark hover:drop-shadow-sm " >Swap now</button>
+                                <button className="w-full font-manrope text-buttonborder text-opacity-100 bg-secondMainCardLight border border-b-8 border-buttonborder rounded-2xl py-3.5 px-6 font-extrabold  opacity-70 shadow-glow hover:bg-secondMainCard hover:shadow-customdark hover:drop-shadow-sm hover:-translate-y-1" >Swap now</button>
                             </div>
                         </aritcle>
 

@@ -9,6 +9,15 @@ const Home = () => {
       navigate(`/${path}`)
     )
   }
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    }
+    )
+  }
+
   return (
     <div className="bg-black max-w-full ">
 
@@ -44,28 +53,28 @@ const Home = () => {
           <button className="font-manrope font-extrabold text-buttonborder xl:text-base md:text-sm leading-4 xs:my-6 hover:text-hoverColorChange">Learn More</button>
         </div>
         <div className="flex  xs:flex-col md:flex-row  justify-center xs:justify-center mt-4 xs:mt-6">
-          <section className=" xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm  hover:shadow-glow ">
+          <section className=" xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm  hover:shadow-glow hover:-translate-y-1 ">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Lorem ipsum dolor sit amet</div>
             <div className=" flex bg-secondMainCard text-white  xs:rounded-xl md:rounded-none font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>Trade</p>
               <img src="assets\Icon.png" alt="icon" className="h-3 w-3 drop-shadow-customColor" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
+          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow hover:-translate-y-1">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Try the new cross-chain swap</div>
             <div className=" flex bg-secondMainCard text-white xs:rounded-xl md:rounded-none font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>Swaps</p>
               <img src="assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
+          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow hover:-translate-y-1">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Lorem ipsum dolor sit amet</div>
             <div className=" flex bg-secondMainCard text-white xs:rounded-xl md:rounded-none  font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>Perps</p>
               <img src="assets\Icon.png" alt="icon" className="h-3 w-3" />
             </div>
           </section>
-          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow">
+          <section className="xl:w-60 xl:h-40 md:w-52 md:h-38 md:rounded-2xl xl:m-3 md:m-2 xs:m-2 sectionCustom  xs:bg-black  md:border xs:bg-none border-white border-opacity-10 hover:drop-shadow-sm   hover:shadow-glow hover:-translate-y-1">
             <div className="opacity-90 text-fontGray bg-secondMainCardLight pt-8 pb-4 px-6 text-left md:rounded-t-2xl xl:text-xl md:text-md xs:hidden md:inline-block">Lorem ipsum dolor sit amet</div>
             <div className=" flex bg-secondMainCard text-white xs:rounded-xl md:rounded-none  font-bold md:justify-between  md:items-center xs:justify-around xl:py-4 xl:px-4 md:py-3 md:px-6 xs:py-4 xs:mx-6 md:mx-0 md:rounded-b-2xl">
               <p>OPerps</p>
@@ -188,7 +197,7 @@ const Home = () => {
         </section>
       </main>
       <div className="flex justify-end items-end m-10 ">
-        <img className="gradient-border w-12 h-11 p-4 mx-4 hover:-translate-y-1" src="assets\Vector-goTop.png" alt="goToTop" />
+        <img className="gradient-border w-12 h-11 p-4 mx-4 hover:-translate-y-1" onClick={()=>{goToTop()}} src="assets\Vector-goTop.png" alt="goToTop" />
       </div>
       <footer className=" flex xs:flex-col md:flex-row xs:justify-center bg-black min-h-96 mt-1 border-t border-footerborder border-opacity-30">
         <div className="md:w-1/2 md:h-80 xs:w-full md:items-start md:mx-12 mt-16" >
